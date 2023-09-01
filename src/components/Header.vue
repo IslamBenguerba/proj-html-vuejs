@@ -9,7 +9,7 @@ export default {
 <template>
     <div class="container-fluid container-header">
         <div class="container-xxl">
-            <nav class="header-bar">
+            <nav class="header-bar fixed-top">
                 <img src="../assets/Images/avadabarbers-stickylogo-x2.png" style="width: 200px;" alt="">
                 <div class="container-icons">
                     <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
@@ -95,6 +95,7 @@ export default {
 } */
 
 .middle-container{
+    padding-top: 6rem;
     display: flex;
     gap: 9rem;
 }
