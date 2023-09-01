@@ -1,7 +1,7 @@
 <script>
 import Button from './Button.vue';
 export default {
-    components:{
+    components: {
         Button
     }
 }
@@ -10,11 +10,14 @@ export default {
     <div class="container-fluid container-header">
         <div class="container-xxl">
             <nav class="header-bar fixed-top">
-                <img src="../assets/Images/avadabarbers-stickylogo-x2.png" style="width: 200px;" alt="">
-                <div class="container-icons">
-                    <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
-                    <i class="fa-solid fa-bars" style="color: #be9359;"></i>
+                <div class="container d-flex justify-content-between">
+                    <img src="../assets/Images/avadabarbers-stickylogo-x2.png" style="width: 200px;" alt="">
+                    <div class="container-icons">
+                        <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                        <i class="fa-solid fa-bars" style="color: #be9359;"></i>
+                    </div>
                 </div>
+
             </nav>
             <div class="middle-container">
                 <div class="title-container">
@@ -29,7 +32,7 @@ export default {
                     <!-- </div> -->
                 </div>
                 <div class="img-container-middle">
-                    <img class="img-hero" src="../assets/Images/avadabarbers_hero_focalmirror.png" >
+                    <img class="img-hero" src="../assets/Images/avadabarbers_hero_focalmirror.png">
                 </div>
 
             </div>
@@ -94,18 +97,19 @@ export default {
     text-decoration: none;
 } */
 
-.middle-container{
-    padding-top: 6rem;
+.middle-container {
+    padding-top: 200px;
     display: flex;
     gap: 9rem;
 }
-.img-container-middle{
-    position: relative;
+
+.img-container-middle {
+   
 }
-.img-hero{
+
+.img-hero {
     object-fit: contain;
-    position: absolute;
-    top: -6rem;
+    
     width: 600px;
 }
 </style>

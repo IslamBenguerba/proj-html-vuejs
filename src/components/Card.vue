@@ -1,7 +1,8 @@
 <script>
 export default {
     props: {
-        card: {}
+        card: {},
+        shop: Boolean
     },
     data() {
         return {
@@ -20,10 +21,12 @@ export default {
 </script>
 <template>
     <div class="card-barber" style="width: 18rem;">
-        <img :src="getImage(card)">
+        <img :class="{ 'immage-shop': shop }" :src="getImage(card)">
         <div class="card-body-barber">
-            <h5 class="card-barber-title">{{ card['titolo'] }}</h5>
-            <p class="card-barber-text">{{ card['parag'] }}</p>
+            <h4 v-if="shop" class="shop-product"> <a href="">{{ card['titolo'] }}</a></h4>
+            <span v-if="shop" class="shop-price">{{ card['parag'] }}</span>
+            <h5 v-if="!shop" class="card-barber-title">{{ card['titolo'] }}</h5>
+            <p v-if="!shop" class="card-barber-text">{{ card['parag'] }}</p>
         </div>
     </div>
 </template>
@@ -40,11 +43,37 @@ export default {
         font-family: Abril Fatface;
         color: #be9359;
     }
+
+    img {
+        width: 64px;
+    }
+
+    .immage-shop {
+        width: 100%;
+    }
+}
+
+.shop-product {
+    a {
+        font-size: 32px;
+        font-family: Abril Fatface, Arial, Helvetica, sans-serif;
+        color: #be9359;
+        text-decoration: none;
+    }
+
+}
+.shop-price{
+    color: #be9359;
+    font-size: 12px;
+    font-family: Lato,Arial, Helvetica, sans-serif;
+}
+
+.card-body-barber {
+    text-align: center;
 }
 
 .card-barber-text {
     font-size: 18px;
     font-family: Lato, Arial, Helvetica, sans-serif;
     color: #686868;
-}
-</style>
+}</style>

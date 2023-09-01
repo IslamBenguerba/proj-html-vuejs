@@ -50,10 +50,10 @@ export default {
                 <h2 class="max-tittle">Barbieri professionisti</h2>
                 <Button message="Ulteriori Informazioni"></Button>
             </div>
-
+            <img class="triangle" style="width: 100%;height: 100px;" src="../assets/triangle.svg" alt="">
         </section>
 
-        <img class="triangle" style="width: 100%;height: 100px;" src="../assets/triangle.svg" alt="">
+
     </div>
 
     <section>
@@ -75,6 +75,7 @@ export default {
 
 <style>
 .first-section {
+    position: relative;
     padding: 148.5px 30px;
     /* height: 500px; */
     background-image: url(../assets//Images/avadabarbers-about-introbackground.jpg);
@@ -114,7 +115,8 @@ export default {
 }
 
 .triangle {
-    margin-top: -100px;
+    position: absolute;
+    bottom: 0;
 }
 
 .triangle-black {

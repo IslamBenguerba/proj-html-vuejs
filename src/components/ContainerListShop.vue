@@ -45,15 +45,20 @@ export default {
 }
 </script>
 <template>
-    <div class="container d-flex flex-column justify-content-center">
+    <div class="container d-flex flex-column justify-content-center shop-container">
         <div class="row">
             <div class="col" v-for="card in imageList">
-                <Card :card=card></Card>
+                <Card shop :card=card></Card>
             </div>
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <Button message="leggi i nostri servizi"></Button>
+            <Button condensed message="Aquista la nostra gamma di prodotti"></Button>
         </div>
 
     </div>
 </template>
+<style>
+.shop-container{
+    padding-bottom: 90px;
+}
+</style>

@@ -39,7 +39,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container d-flex flex-column justify-content-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
         <div class="row">
             <div class="col" v-for="card in imageList">
                 <Card :card=card></Card>
