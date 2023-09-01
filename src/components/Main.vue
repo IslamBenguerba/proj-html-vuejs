@@ -4,6 +4,7 @@ import ServiceSection from './ServiceSection.vue';
 import ContainerList from './ContainerList.vue';
 import TittleSection from './TittleSection.vue';
 import ContainerListShop from './ContainerListShop.vue'
+import ProductOfMonth from './ProductOfMonth.vue';
 export default {
 
     components: {
@@ -11,7 +12,8 @@ export default {
         ServiceSection,
         ContainerList,
         TittleSection,
-        ContainerListShop
+        ContainerListShop,
+        ProductOfMonth
     },
     data() {
         return {
@@ -70,6 +72,9 @@ export default {
 
         </div>
 
+    </section>
+    <section>
+        <ProductOfMonth></ProductOfMonth>
     </section>
 </template>
 

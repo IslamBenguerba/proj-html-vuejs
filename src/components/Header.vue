@@ -103,9 +103,9 @@ export default {
     gap: 9rem;
 }
 
-.img-container-middle {
+/* .img-container-middle {
    
-}
+} */
 
 .img-hero {
     object-fit: contain;
