@@ -19,22 +19,22 @@ export default {
                 {
                     titolo: 'Spazzola',
                     parag: '15$',
-                    immage: 'brush_dark.png'
+                    immage: 'brush_dark-400x400.png'
                 },
                 {
                     titolo: 'Forbici',
                     parag: '85$',
-                    immage: 'scissors.png'
+                    immage: 'scissors-400x400.png'
                 },
                 {
                     titolo: 'Olio Caldo',
                     parag: '15$',
-                    immage: 'hot_oil_dark.png'
+                    immage: 'hot_oil_dark-400x400.png'
                 },
                 {
                     titolo: 'Rasoio dritto',
                     parag: '30$',
-                    immage: 'hot_oil_dark.png'
+                    immage: 'straight_razor_dark-400x400.png'
                 }
             ]
         }
