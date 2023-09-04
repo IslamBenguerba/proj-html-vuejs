@@ -83,7 +83,7 @@ export default {
                 </div>
                 <!-- menu nascosto -->
                 <div class="container-menu " :class="{ 'open': !menu }, current">
-                    <button class="btn btn-closed" @click="closeMenu()"> <i class="fa-solid fa-x"></i></button>
+                    <button class="btn btn-closed" @click="closeMenu()"> <i class="fa-solid fa-x" style="color: white;"></i></button>
                     <a class="link-menu-shadow" @mouseover="backImg('Casa')" @mouseleave="this.current = ''" href="">Casa</a>
                     <a class="link-menu-shadow" @mouseover="backImg('About')" @mouseleave="this.current = ''" href="">Chi
                         siamo</a>
@@ -117,7 +117,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style lang="scss" scoped >
 .link-menu-shadow {
     text-align: center;
     text-decoration: none;
@@ -272,7 +272,6 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
-    color: white;
     font-size: 1.5rem;
 }
 </style>

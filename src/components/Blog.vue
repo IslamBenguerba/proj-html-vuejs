@@ -40,7 +40,7 @@ export default {
         <TittleSection  titoloPiccolo="RACCONTI DAL NEGOZIO DI BARBIERE" titoloGrande="Post recenti del blog"></TittleSection>
         <div class="last-post">
             <div class="row">
-                <div class="col" v-for="post in listposts">
+                <div class="col-12 col-md-4" v-for="post in listposts">
                     <div class="card-post">
                         <div class="card-post-img">
                             <img :src="getImage(post)">
@@ -59,6 +59,8 @@ export default {
 <style lang="scss" scoped>
 .container-fluid{
     background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 .card-post {
     display: flex;

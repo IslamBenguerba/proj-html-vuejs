@@ -26,7 +26,7 @@
     <div class="container container-rev">
         <TittleSection titoloPiccolo="COSA DICONO LE PERSONE" titoloGrande="Recensioni"></TittleSection>
         <div class="row">
-            <div class="col" v-for="rev in immageRevies">
+            <div class="col-12 col-md-4" v-for="rev in immageRevies">
                 <div class="card-reviews">
                     <div class="card-rev-text">
                         {{ rev['testo'] }}
