@@ -45,7 +45,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container d-flex flex-column justify-content-center shop-container">
+    <div class="d-flex flex-column justify-content-center shop-container">
         <div class="row">
             <div class="col" v-for="card in imageList">
                 <Card shop :card=card></Card>

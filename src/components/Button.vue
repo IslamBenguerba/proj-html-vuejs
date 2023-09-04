@@ -8,16 +8,26 @@ export default {
 </script>
 <template>
     <div class="link-info-container">
-        <a :class="{'link-small':condensed}" class="link-info" href=""><span style=" color: #be9359;"> {{ message }}</span></a>
+        <a :class="{'link-small':condensed}" class="link-info" href=""><span> {{ message }}</span></a>
     </div>
 </template>
-<style>
+<style lang="scss">
 .link-info-container {
     display: flex;
     align-items: center;
     text-transform: uppercase;
 }
-
+.link-info{
+    span{
+        color: #be9359;
+    }
+}
+.link-info:hover{
+    border-color:#906933 ;
+    span{
+        color: #906933;
+    }
+}
 .link-info {
     margin-top: 2rem;
     border: 2px solid #be9359;

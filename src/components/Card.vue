@@ -10,17 +10,21 @@ export default {
         }
     },
     methods: {
+        /**
+         * card è un oggetto che a una chiave immage con il nome del file interessato.
+         * questo è un metodo per ottenere un immagine dinamicamente
+         * @param {{ }} card 
+         */
         getImage(card) {
             return new URL(`../assets/images/${card.immage}`, import.meta.url).href
 
-            return img
         }
     }
 }
-
+/* la variabile shop serve per cambiare lista utilizzando il medesimo componente. la variabile shop viene passata da ContainerListShop*/ 
 </script>
 <template>
-    <div class="card-barber" style="width: 18rem;">
+    <div class="card-barber" style="width: 18rem;" >
         <img :class="{ 'immage-shop': shop }" :src="getImage(card)">
         <div class="card-body-barber">
             <h4 v-if="shop" class="shop-product"> <a href="">{{ card['titolo'] }}</a></h4>
@@ -37,19 +41,18 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    width: 18rem;
     .card-barber-title {
         font-size: 32px;
         font-family: Abril Fatface;
         color: #be9359;
     }
 
-    img {
-        width: 64px;
-    }
-
     .immage-shop {
-        width: 100%;
+        img{
+            max-width: 600px;
+        }
+
     }
 }
 

@@ -5,6 +5,9 @@ import ContainerList from './ContainerList.vue';
 import TittleSection from './TittleSection.vue';
 import ContainerListShop from './ContainerListShop.vue'
 import ProductOfMonth from './ProductOfMonth.vue';
+import SectioRewvies from './SectioRewvies.vue';
+import Blog from './Blog.vue';
+import Footer from './Footer.vue';
 export default {
 
     components: {
@@ -13,7 +16,10 @@ export default {
         ContainerList,
         TittleSection,
         ContainerListShop,
-        ProductOfMonth
+        ProductOfMonth,
+        SectioRewvies,
+        Blog,
+        Footer
     },
     data() {
         return {
@@ -21,22 +27,22 @@ export default {
                 {
                     titolo: 'Spazzola',
                     parag: '15$',
-                    immage: 'brush_dark-400x400.png'
+                    immage: 'brush_dark-600x600.png'
                 },
                 {
                     titolo: 'Forbici',
                     parag: '85$',
-                    immage: 'scissors-400x400.png'
+                    immage: 'scissors-600x600.png'
                 },
                 {
                     titolo: 'Olio Caldo',
                     parag: '15$',
-                    immage: 'hot_oil_dark-400x400.png'
+                    immage: 'hot_oil_dark-600x600.png'
                 },
                 {
                     titolo: 'Rasoio dritto',
                     parag: '30$',
-                    immage: 'straight_razor_dark-400x400.png'
+                    immage: 'straight_razor_dark-600x600.png'
                 }
             ]
         }
@@ -76,6 +82,23 @@ export default {
     <section>
         <ProductOfMonth></ProductOfMonth>
     </section>
+    <section class="section-reviews">
+        <SectioRewvies>
+
+        </SectioRewvies>
+
+    </section>
+    <section>
+        <img class="triangle-grey" style="width: 100%;height: 100px;" src="../assets/triangle.svg" alt="">
+        <SectionLastPost></SectionLastPost>
+    </section>
+    <section>
+        <Blog></Blog>
+    </section>
+    <section class="foot">
+        <Footer></Footer>
+    </section>
+    
 </template>
 
 <style>
@@ -133,5 +156,17 @@ export default {
     background-repeat: no-repeat;
     object-fit: cover;
     height: 100%;
+}
+
+.section-reviews {
+    position: relative;
+}
+
+.triangle-grey {
+    rotate: 180deg;
+    background-color: #f5f5f5;
+}
+.foot{
+    position: relative;
 }
 </style>
